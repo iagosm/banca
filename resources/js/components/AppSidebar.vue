@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, FolderGit2, LayoutGrid } from '@lucide/vue';
+import { BookOpen, ClipboardList, FolderGit2, FolderTree, HelpCircle, Layers, LayoutGrid } from '@lucide/vue';
 import AppLogo from '@/components/AppLogo.vue';
 import NavFooter from '@/components/NavFooter.vue';
 import NavMain from '@/components/NavMain.vue';
@@ -23,16 +23,41 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+    {
+        title: 'Matérias',
+        href: '/subjects',
+        icon: BookOpen,
+    },
+    {
+        title: 'Tópicos',
+        href: '/topics',
+        icon: FolderTree,
+    },
+    {
+        title: 'Questões',
+        href: '/questions',
+        icon: HelpCircle,
+    },
+    {
+        title: 'Simulados',
+        href: '/mock-exams',
+        icon: ClipboardList,
+    },
+    {
+        title: 'Flashcards',
+        href: '/flashcards',
+        icon: Layers,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Repository',
+        title: 'Repository1',
         href: 'https://github.com/laravel/vue-starter-kit',
         icon: FolderGit2,
     },
     {
-        title: 'Documentation',
+        title: 'Documentation1231',
         href: 'https://laravel.com/docs/starter-kits#vue',
         icon: BookOpen,
     },
